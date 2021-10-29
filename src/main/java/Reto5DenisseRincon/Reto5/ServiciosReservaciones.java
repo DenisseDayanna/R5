@@ -87,7 +87,7 @@ public class ServiciosReservaciones {
             datoUno = parser.parse(datoA);
             datoDos = parser.parse(datoB);
         }catch(ParseException evt){
-            evt.printStackTrace();
+            //evt.printStackTrace();
         }if(datoUno.before(datoDos)){
             return metodosCrud.ReservacionTiempo(datoUno, datoDos);
         }else{
